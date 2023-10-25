@@ -99,19 +99,21 @@
 // }
 // console.log(largest);
 
-let arr=[15,56,89,78,45,89,12,35,15,12]
+// let arr=[15,56,89,78,45,89,12,35,15,12]
 // const orderedSet = new Set(['apple', 'banana', 'cherry']);
 // console.log(orderedSet);
 // let a=new Set(arr)
 // console.log(a);
-let b=[]
+// let b=[]
 
-for(i=0;i<arr.length;i++){
-    for(j=0;j<b.length;j++){
-        if(arr[i]!==b[j]){
-            b.push(arr[i])
-        }
-    }
-}
-console.log(b);
+// for(i=0;i<arr.length;i++){
+//     for(j=0;j<b.length;j++){
+//         if(arr[i]!==b[j]){
+//             b.push(arr[i])
+//         }
+//     }
+// }
+// console.log(b);
+
+
 

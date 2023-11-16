@@ -376,22 +376,9 @@
 
 //27. Program to find LCM of two numbers using while loop****************************************************************************
 // debugger
-// let a=15;
-// let b=3;
-// let c=0;
-// d=1;
-// if(a>b){
-//     c=a
-// }else{
-//     c=b
-// }
-// while(d==1){
-//     if(c%a==0 && c%b==0){
-//         console.log(c);
-//         d=0;
-//     }
-//     c++;
-// }
+
+
+
 
 //28.Program to Display Characters from A to Z Using Loop with count.***************************************************************
 

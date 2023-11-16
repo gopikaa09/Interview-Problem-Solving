@@ -140,14 +140,37 @@
 // }
 // console.log(operators(15,25,"*"));
 
-let x=Math.floor(Math.random()*10)
-console.log(x);
+// let x=Math.floor(Math.random()*10)
+// console.log(x);
 
-let y=prompt("Guess a number")
-if(x==y){
-    console.log("Equal");
-}else if(x>y){
-    console.log("less");
-}else{
-    console.log("greater");
+// let y=prompt("Guess a number")
+// if(x==y){
+//     console.log("Equal");
+// }else if(x>y){
+//     console.log("less");
+// }else{
+//     console.log("greater");
+// }
+
+
+let a=15;
+let b=7;
+let c
+// a>b? c=a :c=b
+c=b
+let i=1;
+while(c!=0){
+    if(i%a==0 && i%b==0){
+        console.log(i);
+        break;
+    }
+    i++
 }
+
+for(let i=1;i!=0;i++){
+    if(i%a==0 && i%b==0){
+        console.log(`Lcm of ${a} and ${b} is ${i}`);
+        break
+    }
+}
+

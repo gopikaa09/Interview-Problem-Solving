@@ -162,24 +162,24 @@
 // Input: ‘Hii i am ram’
 // Output; i, a
 
-// let a="Hii i am ram"
-// let b=""
-// for(i=0;i<a.length;i++){
-//     if(a[i]!==" "){
-//         b+=a[i]
-//     }
+// let a = "Hii i am ram";
+// let b = "";
+// for (i = 0; i < a.length; i++) {
+//   if (a[i] !== " ") {
+//     b += a[i];
+//   }
 // }
 // console.log(b);
-// for(j=0;j<b.length;j++){
-//     let count=0;
-//     for(k=1;k<b.length;k++){
-//         if(b[j]==b[k]){
-//             count++;
-//         }
+// for (j = 0; j < b.length; j++) {
+//   let count = 0;
+//   for (k = 1; k < b.length; k++) {
+//     if (b[j] == b[k]) {
+//       count++;
 //     }
-//     if(count>=2){
-//         console.log(b[j]);
-//     }
+//   }
+//   if (count >= 2) {
+//     console.log(b[j]);
+//   }
 // }
 
 // 9.Write Program to remove duplicate elements in an array and sort it in descending order(can not use predefined function).
@@ -265,6 +265,7 @@
 //         }
 //     }
 // }
+// console.log(final);
 // for(k=0;k<final.length;k++){
 //     if(final[k]!=final[k+1]){
 //         final1.push(final[k])

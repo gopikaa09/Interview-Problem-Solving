@@ -70,22 +70,22 @@
 
 
 // let a=["text-Input","text-output","text","other"]
-let a=["fl-ower","fl-ow","fl-ight","fl-hghjgj"]
-let arr=[]
-for(i=0;i<a.length;i++){
-  let b=a[i].split("-")
-  arr.push(b)
-}
-console.log(arr)
-let final=[]
-for(j=0;j<arr.length-1;j++){
-    console.log(arr[j][0]);
-    if(arr[j][0]==arr[j+1][0]){
-        final.push(arr[j][0])
-    }
-}
-console.log(final);
-console.log(final[0]);
+// let a=["fl-ower","fl-ow","fl-ight","fl-hghjgj"]
+// let arr=[]
+// for(i=0;i<a.length;i++){
+//   let b=a[i].split("-")
+//   arr.push(b)
+// }
+// console.log(arr)
+// let final=[]
+// for(j=0;j<arr.length-1;j++){
+//     console.log(arr[j][0]);
+//     if(arr[j][0]==arr[j+1][0]){
+//         final.push(arr[j][0])
+//     }
+// }
+// console.log(final);
+// console.log(final[0]);
 
 
 
@@ -192,4 +192,22 @@ console.log(final[0]);
 // let c=a.slice(-x).concat(a.slice(0,-x))
 // console.log(c)
 
-
+let a=[15,26,56,78,78,78,12,45,2,31,5]
+for(i=0;i<a.length;i++){
+  for(j=i+1;j<a.length;j++){
+    if(a[i]>a[j]){
+      temp=a[i]
+      a[i]=a[j]
+      a[j]=temp
+    }
+  }
+}
+console.log(a);
+let arr=[]
+for(i=a.length-1;i>=0;i--){
+  if(a[i]!=a[i-1]){
+    arr.push(a[i])
+  }
+}
+console.log(arr);
+console.log(arr[1]);

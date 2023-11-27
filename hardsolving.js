@@ -139,6 +139,52 @@
 // parseCode("michael0smith004331")
 
 
+// 6.Given a String(Note:- String Will Contain all later from A-Z except 1 letter, that letter you need to find out) :-
+
+// Input string=“6 E @ f w 3 x y g N 1 o p Q A b c h i j # K l  d  m  R  T U V  Z”
+
+// Output = ‘’S is missing from the String”
+
+// Note:- (
+// Time Complexity:- O(n) means only 1 loop you can use.
+// without using any predefined function.
+// )
+
+let a="6E@fw3xygN1opQAbchij#KldmRTUVZ"
+let b=a.toUpperCase()
+for(i=0;i<a.length;i++){
+    if(a[i].match(/[a-z]/i)){
+        console.log(a[i]);
+    }
+}
+// let b=a.toUpperCase()
+// console.log(b);
+// let arr=[]
+// let ind=0;
+// for(i=65;i<=90;i++){
+//     arr.push(String.fromCharCode(i))
+// }
+// console.log(arr);
+
+// for(j=0;j<arr.length;j++){
+//     for(k=0;k<b.length;k++){
+//         if(arr[j]==h){
+
+//         }
+//     }
+
+// }
+
+// 7.  Given a string s, return the longest 
+// Palindromic Substring
+ 
+// Input: s = "babad"
+// Output: "bab"
+// Explanation: "aba" is also a valid answer.
+
+// Input: s = "cbbd"
+// Output: "bb"
+
 // let str="babad"
 // let str="cbbd"
 // const arr=[]
@@ -166,6 +212,60 @@
 
 
 
+// 8.8.  Given an unsorted array of integers nums, return the length of    the longest consecutive elements sequence.
+// You must write an algorithm that runs in O(n) time.
+// Input: nums = [100,4,200,1,3,2]
+// Output: 4
+// Explanation: The longest consecutive elements sequence is [1, 2, 3, 4]. Therefore its length is 4.
+// Input: nums = [0,3,7,2,5,8,4,6,0,1]
+// Output: 9
+
+
+// let a=[100,4,200,1,3,2]
+// // let a=[0,3,7,2,5,8,4,6,0,1]
+// let b=a.sort((a,b)=>{
+//     return a-b
+// })
+// console.log(b);
+// let array=[]
+// for(j=0;j<b.length;j++){
+//    if(b[j]!==b[j+1]){
+//     array.push(b[j])
+//    }
+// }
+// console.log(array);
+// let arr=[]
+// let x=b[0];
+// for(i=0;i<array.length;i++){
+//     if(array[i]===x){    
+//         arr.push(array[i]);
+//         x++
+//     }else{
+//         x++
+//     }
+// }
+// console.log(arr);
+// console.log(arr.length);
+
+
+
+
+const options = {
+    method: 'GET',
+    url: 'https://twinword-word-graph-dictionary.p.rapidapi.com/definition/',
+    params: {entry: 'mask'},
+    headers: {
+      'X-RapidAPI-Key': '789b37fbd1msh043925996f9c8c5p1b6b4fjsnfe1be3342514',
+      'X-RapidAPI-Host': 'twinword-word-graph-dictionary.p.rapidapi.com'
+    }
+  };
+  
+  try {
+      const response = await axios.request(options);
+      console.log(response.data);
+  } catch (error) {
+      console.error(error);
+  }
 
 
 

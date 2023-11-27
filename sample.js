@@ -153,24 +153,57 @@
 // }
 
 
-let a=15;
-let b=7;
-let c
+// let a=15;
+// let b=50;
+// let c
 // a>b? c=a :c=b
-c=b
-let i=1;
-while(c!=0){
-    if(i%a==0 && i%b==0){
-        console.log(i);
-        break;
-    }
-    i++
-}
+// // c=b
+// let i=1;
+// while(c!=0){
+//     if(i%a==0 && i%b==0){
+//         console.log(i);
+//         break;
+//     }
+//     i++
+// }
 
-for(let i=1;i!=0;i++){
-    if(i%a==0 && i%b==0){
-        console.log(`Lcm of ${a} and ${b} is ${i}`);
-        break
+// for(let i=1;i!=0;i++){
+//     if(i%a==0 && i%b==0){
+//         console.log(`Lcm of ${a} and ${b} is ${i}`);
+//         break
+//     }
+// }
+
+
+let a=[1,2,2,5,6,7,8,9,5,6,6,4,6,6,6,6,6]
+// let a=[0,1,2,3,,5,6,8,9]
+e=[]
+for(i=0;i<a.length;i++){
+    // debugger
+    let count=1
+    for(j=i+1;j<a.length;j++){
+        if(a[i]==a[j]){
+            count++
+            e[j]=-1
+        }
+    }
+    if(e[i]!=-1){
+        e[i]=count
     }
 }
-
+console.log(e);
+for(k=0;k<e.length;k++){
+    if(e[k]!==-1){
+        console.log(a[k]);
+    }
+}
+let max=0
+let ind=0
+for(i=0;i<e.length;i++){
+    if(e[i]>max){
+        max=e[i]
+        ind=i
+    }
+}
+console.log(a[ind]);
+console.log(max);

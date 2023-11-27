@@ -129,17 +129,20 @@
 //        3 present 2 times.
 //        5 present 1 times …….  Etc
 
-// let a=[1,6,3,1,5,9,7,2,1,9,3,7,8,9,10];
+let a=[1,6,3,1,5,9,7,2,1,9,3,7,8,9,10];
 
-// for(i=0;i<a.length;i++){
-//     count=0;
-//     for(j=0;j<a.length;j++){
-//         if(a[i]==a[j]){
-//             count++
-//         }
-//     }
-//     console.log(`${a[i]} present ${count} times`);
-// }
+for(i=0;i<a.length;i++){
+    count=0;
+    for(j=0;j<a.length;j++){
+        if(a[i]==a[j]){
+            count++
+        }
+    }
+    if(count>=1){
+      console.log(`${a[i]} present ${count} times`);
+    }
+    
+}
 
 // 7.Write a function that accepts an array of strings. Return the longest string(can not use predefined function).
 
@@ -278,31 +281,31 @@
 //    console.log("false");
 // }
 
-function problem12mid(subseq, arr) {
-  let index = 0;
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i] === subseq[index]) {
-      index++;
-    }
-    if (index === subseq.length) {
-      return true;
-    }
-  }
-  return false;
-}
+// function problem12mid(subseq, arr) {
+//   let index = 0;
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] === subseq[index]) {
+//       index++;
+//     }
+//     if (index === subseq.length) {
+//       return true;
+//     }
+//   }
+//   return false;
+// }
 
-// Example usage:
-const arr = [5, 7, 3, 2, 2, 7, -1, 5, -3, 13, 4];
+// // Example usage:
+// const arr = [5, 7, 3, 2, 2, 7, -1, 5, -3, 13, 4];
 
-Subseq1 = [7, -1, 5, -3];
-Subseq2 = [7, -1, 4, -3];
-Subseq3 = [-1];
-Subseq4 = [13, -3, 4, 1];
+// Subseq1 = [7, -1, 5, -3];
+// Subseq2 = [7, -1, 4, -3];
+// Subseq3 = [-1];
+// Subseq4 = [13, -3, 4, 1];
 
-console.log(problem12mid(Subseq1, arr));
-console.log(problem12mid(Subseq2, arr));
-console.log(problem12mid(Subseq1, arr));
-console.log(problem12mid(Subseq1, arr));
+// console.log(problem12mid(Subseq1, arr));
+// console.log(problem12mid(Subseq2, arr));
+// console.log(problem12mid(Subseq1, arr));
+// console.log(problem12mid(Subseq1, arr));
 
 // 13.Find sum of the Unique numbers:
 // Example : Let arr = [1, 2, 2, 1, 3, 5, 1];

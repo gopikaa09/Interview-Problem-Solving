@@ -249,3 +249,29 @@
 // console.log(b);
 
 
+// x Array====================================================================
+//even duplicates count in an array 
+
+let a=[2,6,2,3,1,1,8,1,1]
+let countarr=[]
+for(i=0;i<a.length;i++){
+    let c=1
+    for(j=i+1;j<a.length;j++){
+        if(a[i]==a[j]){
+            c=c+1;
+            countarr[j]=-1
+        }
+    }
+    if(countarr[i]!=-1){
+        countarr[i]=c
+    }
+}
+console.log(countarr);
+let count=0
+for(i=0;i<countarr.length;i++){
+    if(countarr[i]>1 && a[i]%2==0){
+        console.log(a[i]);
+        count++
+    }
+}
+console.log(count);

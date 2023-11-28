@@ -67,3 +67,98 @@
 // }
 // console.log(sum2)
 // console.log(`misssing number is ${sum1-sum2}`)
+// =================================================================================
+
+// let a=[
+// {
+//     name:"gopika",
+//     age:21,
+// },
+// {
+//     name:"mano",
+//     age:8,
+// },
+// {
+//     name:"lucky",
+//     age:12,
+// },
+// {
+//     name:"bhargav",
+//     age:22,
+// },
+// {
+//     name:"abhi",
+//     age:51,
+// }
+// ]
+// let result=[]
+// let temp
+// for(i=0;i<a.length;i++){
+//     for(j=i+1;j<a.length;j++){
+//         if(a[i].age>a[j].age){
+//             temp=a[i]
+//             a[i]=a[j]
+//             a[j]=temp
+//         }
+//     }
+// }
+// console.log(a);
+
+// ==================================================================================
+
+// let a=[
+//     {
+//         name:"RRR",
+//         ticketfare:500,
+//         status:"paid",
+//     },
+//     {
+//         name:"nene raju nene manthri",
+//         ticketfare:400,
+//         status:"not paid",
+//     },
+//     {
+//         name:"Devara",
+//         ticketfare:600,
+//         status:"paid",
+//     },
+//     {
+//         name:"Raja rani",
+//         ticketfare:500,
+//         status:"not paid",
+//     },
+//     {
+//         name:"Skanda",
+//         ticketfare:200,
+//         status:"paid",
+//     },
+//     {
+//         name:"Godavari",
+//         ticketfare:350,
+//         status:"paid",
+//     },
+//     {
+//         name:"anand",
+//         ticketfare:150,
+//         status:"not paid",
+//     },
+//     {
+//         name:"Gowtham scc",
+//         ticketfare:250,
+//         status:"paid",
+//     },
+// ]
+// let index=0;
+// let result1=[]
+// let result2=[]
+// for(i of a){
+//     if(i.status=="paid"){
+//         result1.push(i)
+//     }else{
+//         result2.push(i)
+//     }
+// }
+// console.log(result1.concat(result2));
+
+
+

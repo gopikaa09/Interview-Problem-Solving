@@ -191,23 +191,94 @@
 
 // let c=a.slice(-x).concat(a.slice(0,-x))
 // console.log(c)
+// =====================================================================
+// let a=[15,26,56,78,78,78,12,45,2,31,5]
+// for(i=0;i<a.length;i++){
+//   for(j=i+1;j<a.length;j++){
+//     if(a[i]>a[j]){
+//       temp=a[i]
+//       a[i]=a[j]
+//       a[j]=temp
+//     }
+//   }
+// }
+// console.log(a);
+// let arr=[]
+// for(i=a.length-1;i>=0;i--){
+//   if(a[i]!=a[i-1]){
+//     arr.push(a[i])
+//   }
+// }
+// console.log(arr);
+// console.log(arr[1]);
 
-let a=[15,26,56,78,78,78,12,45,2,31,5]
-for(i=0;i<a.length;i++){
-  for(j=i+1;j<a.length;j++){
-    if(a[i]>a[j]){
-      temp=a[i]
-      a[i]=a[j]
-      a[j]=temp
-    }
-  }
-}
-console.log(a);
-let arr=[]
-for(i=a.length-1;i>=0;i--){
-  if(a[i]!=a[i-1]){
-    arr.push(a[i])
-  }
-}
-console.log(arr);
-console.log(arr[1]);
+// ==========================================================================
+// let a=+prompt("emter a number");
+// let w=+prompt("enter a number of wheels")
+// let foursW=4;
+// let twoW=2;
+
+
+// ===========================================================
+// let a=+prompt("enter a number")
+// console.log(a);
+// let b=String(a)
+// let c=0;
+// for(i=0;i<b.length-1;i++){
+//   if(b[i+1]>b[i]){
+//     c++
+//   }
+// }
+// console.log(c);
+// if(c==b.length-1){
+//     console.log(true);
+// }else{
+//   console.log(false);
+// }
+// console.log(valid);
+// ================================================================
+
+// let rows=4;
+// let b=1
+// for(i=1;i<=rows;i++){ 
+//   let a=""
+//   for(j=1;j<=i;j++){
+//     a+=b
+//     b++
+//   }
+//   console.log(a);
+// }
+// let c=1
+// for(i=1;i<=4;i++){
+//   let a=""
+//   let temp=c
+//   for(j=1;j<=i;j++){
+//     a+=c+" "
+//     c++
+//   }
+//   if(a.length%2==0){
+//     for(k=temp;k<c;k++){
+//       a+=temp+k-a.length
+//       temp--
+//     }
+//   }
+//   console.log(a);
+// }
+
+// let count = 1;
+// for (let i = 1; i <= 4; i++) {
+//   let row = "";
+//   let tempCount = count;
+//   for (let j = 1; j <= i; j++) {
+//     row = count + " " + row;
+//     count++;
+//   }
+//   if (i % 2 === 0) {
+//     let temp = "";
+//     for (let k = tempCount; k < count; k++) {
+//       temp = k + " " + temp;
+//     }
+//     row = temp.trim();
+//   }
+//   console.log(row);
+// }
